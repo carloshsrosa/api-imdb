@@ -23,7 +23,6 @@ public class getRequest {
 		// criar a requisição
 		HttpRequest request = HttpRequest.newBuilder().GET().timeout(Duration.ofSeconds(10))
 				.uri(URI.create("https://imdb-api.com/en/API/Top250Movies/" + getApiKey())).build();
-//				.uri(URI.create("https://imdb-api.com/en/API/Top250Movies/k_4jifg8ui")).build();
 
 		// enviando uma solicitação
 		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());

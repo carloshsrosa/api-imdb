@@ -15,8 +15,6 @@ public class getRequest {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
-		getApiKey();
-		
 		// cliente HTTP
 		HttpClient client = HttpClient.newHttpClient();
 
